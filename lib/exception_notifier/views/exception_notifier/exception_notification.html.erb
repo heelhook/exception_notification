@@ -5,10 +5,10 @@
     <title>Exception</title>
   </head>
   <body>
-    <pre style="font-size: 12px">
+    <pre style="font-size: 14px; background-color: #f0f1b0; padding: 10px;">
 <%= @exception.class.to_s =~ /^[aeiou]/i ? 'An' : 'A' %> <%= @exception.class %> occurred in <%= @kontroller.controller_name %>#<%= @kontroller.action_name %>:
 
-<%= raw @exception.message %>
+<b><%= raw @exception.message %></b>
 <%= raw @backtrace.first %>
 
 <%
